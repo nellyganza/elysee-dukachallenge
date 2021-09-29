@@ -70,9 +70,12 @@ public class TaskController {
      * */
     @ApiOperation(value = "Retrieving all Todo")
     @GetMapping("/findAll")
-    public ResponseEntity<List<Task>> getAllTask(){
+    public ResponseEntity<List<Task>> getAllTask(@AuthenticationPrincipal ApplicationSecurityUser user){
         log.info("Retrieving all Todos");
-        return new ResponseEntity(todoService.getAllTasks(),HttpStatus.OK);
+        TaskOwner owner = ownerRepository.findDistinctByUsername(user.getUsername())
+                .orElseThrow(() -> new UsernameNotFoundException("No user found with specified username"));
+
+        return new ResponseEntity(todoService.getTaskByOwner(owner),HttpStatus.OK);
     }
 
     /**
@@ -131,7 +134,7 @@ public class TaskController {
             List<Task> listUsers = todoService.getAllTasks();
 
             ICsvBeanWriter csvWriter = new CsvBeanWriter(response.getWriter(), CsvPreference.STANDARD_PREFERENCE);
-            String[] csvHeader = {"Todo Name", "Description", "Priority"};
+            String[] csvHeader = {"Todo Name", "Description", "Status"};
             String[] nameMapping = {"name", "description", "priority"};
 
             csvWriter.writeHeader(csvHeader);

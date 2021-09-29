@@ -21,8 +21,10 @@ public class Task implements Serializable {
     @Column(unique = true, nullable = false)
     private String title;
     private String description;
+    private LocalDateTime dateTime;
     @Enumerated(EnumType.STRING)
-    private Priority priority;
+    @Builder.Default
+    private Status status=Status.PENDING;
     @ManyToOne
     private TaskOwner ownedBy;
     @CreationTimestamp

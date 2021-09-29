@@ -61,6 +61,22 @@ public class TaskOwnerServiceImpl implements TaskOwnerService{
     }
 
     @Override
+    public TaskOwner updateProfile(TaskOwner user) {
+       TaskOwner owner =  ownerRepository.findById(user.getId()).get();
+       owner.setEmail(user.getEmail());
+       owner.setFirstName(user.getFirstName());
+       owner.setLastName(user.getLastName());
+       owner.setUsername(user.getUsername());
+       try {
+           TaskOwner savedowner = ownerRepository.save(owner);
+           System.out.println(savedowner);
+           return savedowner;
+       }catch (Exception e) {
+           throw new  Error("Profile not updated");
+       }
+    }
+
+    @Override
     public JwtAccessTokenResponsePayload ownerLogin(LoginPayload loginPayload) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(loginPayload.getUsername(), loginPayload.getPassword())
@@ -73,8 +89,10 @@ public class TaskOwnerServiceImpl implements TaskOwnerService{
                 .message("Successfully Logged in.Welcome to your account")
                 .authenticationToken(jwt)
                 .username(user.getUsername())
-                .userId(user.getId())
+                .id(user.getId())
                 .email(user.getEmail())
+                .firstName(user.getFirstName())
+                .lastName(user.getLastName())
                 .authorities(user.getAuthorities()).build();
     }
 }

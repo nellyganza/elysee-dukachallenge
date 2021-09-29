@@ -3,7 +3,7 @@ package com.elysee.springapp.dukachallenge.service;
 
 import com.elysee.springapp.dukachallenge.dbsetup.DbOperation;
 import com.elysee.springapp.dukachallenge.dbsetup.setupDb;
-import com.elysee.springapp.dukachallenge.domain.Priority;
+import com.elysee.springapp.dukachallenge.domain.Status;
 import com.elysee.springapp.dukachallenge.domain.Task;
 import com.elysee.springapp.dukachallenge.exceptions.TodoException;
 import com.elysee.springapp.dukachallenge.services.TaskService;
@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -30,14 +31,15 @@ public class TodoServiceTest extends setupDb {
         Task t = Task.builder()
                 .id(UUID.randomUUID())
                 .title("Eating")
+                .dateTime(LocalDateTime.now())
                 .description("I Will be Eating at 11:00")
-                .priority(Priority.valueOf("HIGH"))
+                .status(com.elysee.springapp.dukachallenge.domain.Status.valueOf("PENDING"))
                 .build();
 
         Task todo =  new Task();
         todo.setTitle("Coding");
         todo.setDescription("I have to write Java Code");
-        todo.setPriority(Priority.valueOf("LOW"));
+        todo.setStatus(Status.valueOf("PENDING"));
         Task savedTodo = todoService.saveTask(todo);
         assertThat(savedTodo.getTitle(),is(equalTo("Coding")));
     }

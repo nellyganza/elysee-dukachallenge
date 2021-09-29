@@ -14,8 +14,10 @@ public class JwtAccessTokenResponsePayload {
     private String message;
     private String status;
     private String authenticationToken;
-    private UUID userId;
+    private UUID id;
     private String username;
+    private String firstName;
+    private String lastName;
     private String email;
     private Collection<? extends GrantedAuthority> authorities;
 }

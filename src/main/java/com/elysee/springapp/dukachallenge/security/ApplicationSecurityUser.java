@@ -21,6 +21,10 @@ public class ApplicationSecurityUser implements UserDetails {
     private final UUID id;
     private final String username;
     @Getter
+    private final String firstName;
+    @Getter
+    private final String lastName;
+    @Getter
     private final String email;
     @JsonIgnore
     private final String password;

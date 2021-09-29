@@ -9,10 +9,7 @@ import com.elysee.springapp.dukachallenge.services.TaskOwnerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -34,6 +31,23 @@ public class AuthController {
                 .data(user)
                 .message("Your registration was completed successfully").build(), HttpStatus.CREATED
         );
+    }
+    @PutMapping(value = "/update")
+    public ResponseEntity<GeneralResponsePayload> updateProfile(@RequestBody @Valid TaskOwner signupPayload){
+        try {
+            TaskOwner user = ownerService.updateProfile(signupPayload);
+            log.info("user "+signupPayload+" is updating profile ");
+            return new ResponseEntity<GeneralResponsePayload>(GeneralResponsePayload.builder()
+                    .statusCode(HttpStatus.CREATED.toString())
+                    .data(user)
+                    .message("Profile updated Success").build(), HttpStatus.CREATED
+            );
+        }catch (Exception e){
+            return new ResponseEntity<GeneralResponsePayload>(GeneralResponsePayload.builder()
+                    .statusCode(HttpStatus.CREATED.toString())
+                    .message(e.getMessage()).build(), HttpStatus.BAD_REQUEST
+            );
+        }
     }
 
     @PostMapping("/login")

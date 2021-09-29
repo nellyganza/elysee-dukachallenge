@@ -25,6 +25,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
                 .id(owner.getId())
                 .username(owner.getUsername())
                 .email(owner.getEmail())
+                .firstName(owner.getFirstName())
+                .lastName(owner.getLastName())
                 .password(owner.getPassword())
                 .isEnabled(owner.getIsVerified())
                 .isAccountNonExpired(true)

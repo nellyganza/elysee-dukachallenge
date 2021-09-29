@@ -1,5 +1,5 @@
 package com.elysee.springapp.dukachallenge.domain;
 
-public enum Priority {
-    LOW, MEDIUM, HIGH
+public enum Status {
+    PENDING,DONE
 }

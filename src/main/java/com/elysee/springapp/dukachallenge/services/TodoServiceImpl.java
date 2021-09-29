@@ -1,6 +1,7 @@
 package com.elysee.springapp.dukachallenge.services;
 
 import com.elysee.springapp.dukachallenge.domain.Task;
+import com.elysee.springapp.dukachallenge.domain.TaskOwner;
 import com.elysee.springapp.dukachallenge.exceptions.TodoException;
 import com.elysee.springapp.dukachallenge.repository.TaskRepository;
 import org.springframework.stereotype.Service;
@@ -26,8 +27,8 @@ public class TodoServiceImpl implements TaskService {
         return repository.save(Task.builder()
                 .id(UUID.randomUUID())
                 .title(t.getTitle())
+                .dateTime(t.getDateTime())
                 .description(t.getDescription())
-                .priority(t.getPriority())
                 .ownedBy(t.getOwnedBy())
                 .build()
         );
@@ -48,6 +49,7 @@ public class TodoServiceImpl implements TaskService {
      * */
     @Override
     public Task updateTask(Task t) throws TodoException {
+        System.out.println(t);
         Task todo = repository.findById(t.getId()).get();
         if(todo.equals(null)){
             throw new TodoException("Task to update not exist");
@@ -58,8 +60,11 @@ public class TodoServiceImpl implements TaskService {
         if(t.getDescription()!=null){
             todo.setDescription(t.getDescription());
         }
-        if(t.getPriority()!=null){
-            todo.setPriority(t.getPriority());
+        if(t.getStatus()!=null){
+            todo.setStatus(t.getStatus());
+        }
+        if(t.getDateTime()!=null){
+            todo.setDateTime(t.getDateTime());
         }
 
         Task updatedTodo = repository.save(todo);
@@ -74,6 +79,11 @@ public class TodoServiceImpl implements TaskService {
     @Override
     public Task findById(UUID id) {
         return repository.findById(id).get();
+    }
+
+    @Override
+    public List<Task> getTaskByOwner(TaskOwner owner) {
+        return repository.findDistinctByOwnedBy(owner);
     }
 
 

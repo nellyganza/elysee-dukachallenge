@@ -1,0 +1,246 @@
+2021-09-29 00:40:21.807  INFO 70190 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : Starting DukaChallengeApplication using Java 11.0.2 on Nishimwes-MacBook-Air.local with PID 70190 (/Users/nishimweelysee/Documents/DukaChallenge/target/classes started by nishimweelysee in /Users/nishimweelysee/Documents/DukaChallenge)
+2021-09-29 00:40:21.824  INFO 70190 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : No active profile set, falling back to default profiles: default
+2021-09-29 00:40:21.931  INFO 70190 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-29 00:40:21.932  INFO 70190 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-29 00:40:23.597  INFO 70190 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-29 00:40:23.665  INFO 70190 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2021-09-29 00:40:24.243  INFO 70190 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@48778ee4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-29 00:40:24.252  INFO 70190 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-29 00:40:24.502  INFO 70190 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2021-09-29 00:40:24.526  INFO 70190 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-29 00:40:24.527  INFO 70190 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-09-29 00:40:24.607  INFO 70190 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-29 00:40:24.608  INFO 70190 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2676 ms
+2021-09-29 00:40:24.865  INFO 70190 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-29 00:40:24.893  INFO 70190 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-29 00:40:24.912  INFO 70190 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-29 00:40:24.956  INFO 70190 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-29 00:40:25.248  INFO 70190 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-29 00:40:25.258  INFO 70190 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-29 00:40:25.884  INFO 70190 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-29 00:40:25.895  INFO 70190 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-29 00:40:26.240  WARN 70190 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-29 00:40:26.867  INFO 70190 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-09-29 00:40:27.307  INFO 70190 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4238e512, org.springframework.security.web.context.SecurityContextPersistenceFilter@cae99ff, org.springframework.security.web.header.HeaderWriterFilter@4af5c394, org.springframework.web.filter.CorsFilter@1de8d410, org.springframework.security.web.authentication.logout.LogoutFilter@6ad9a578, com.elysee.springapp.dukachallenge.security.jwt.JwtAuthenticationTokenFilter@26640abe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7427c59c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50c7fd96, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60ceaf57, org.springframework.security.web.session.SessionManagementFilter@71f1d454, org.springframework.security.web.access.ExceptionTranslationFilter@1f5575cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ea8d732]
+2021-09-29 00:40:27.406  INFO 70190 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-29 00:40:27.643  INFO 70190 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+2021-09-29 00:40:27.645  INFO 70190 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-29 00:40:27.663  INFO 70190 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-29 00:40:27.669  INFO 70190 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-29 00:40:27.925  INFO 70190 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : Started DukaChallengeApplication in 6.867 seconds (JVM running for 10.272)
+2021-09-29 00:40:28.297  INFO 70190 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-29 00:40:28.299  INFO 70190 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-29 00:40:28.302  INFO 70190 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-09-29 00:42:41.648  INFO 70190 --- [http-nio-9092-exec-3] c.e.s.d.controllers.AuthController       : user com.elysee.springapp.dukachallenge.payloads.request.SignupPayload@23e0bf18 is 
+2021-09-29 00:42:55.134  INFO 70190 --- [http-nio-9092-exec-4] c.e.s.d.controllers.AuthController       : User nelly  is Logging in
+2021-09-29 00:42:55.360 ERROR 70190 --- [http-nio-9092-exec-4] c.e.s.d.s.j.JwtAuthenticationEntryPoint  : Unauthorized Error: Bad credentials
+2021-09-29 00:43:01.322 ERROR 70190 --- [http-nio-9092-exec-6] c.e.s.d.security.jwt.JwtUtils            : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+2021-09-29 00:43:01.337 ERROR 70190 --- [http-nio-9092-exec-6] c.e.s.d.s.j.JwtAuthenticationEntryPoint  : Unauthorized Error: Full authentication is required to access this resource
+2021-09-29 00:44:09.478 ERROR 70190 --- [http-nio-9092-exec-8] c.e.s.d.security.jwt.JwtUtils            : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+2021-09-29 00:44:09.486 ERROR 70190 --- [http-nio-9092-exec-8] c.e.s.d.s.j.JwtAuthenticationEntryPoint  : Unauthorized Error: Full authentication is required to access this resource
+2021-09-29 00:44:31.514  INFO 70190 --- [http-nio-9092-exec-9] c.e.s.d.controllers.AuthController       : User nelly  is Logging in
+2021-09-29 00:44:31.664 ERROR 70190 --- [http-nio-9092-exec-9] c.e.s.d.s.j.JwtAuthenticationEntryPoint  : Unauthorized Error: Bad credentials
+2021-09-29 00:46:19.654  INFO 70190 --- [http-nio-9092-exec-1] c.e.s.d.controllers.AuthController       : user com.elysee.springapp.dukachallenge.payloads.request.SignupPayload@41d2ad96 is 
+2021-09-29 00:46:28.997  INFO 70190 --- [http-nio-9092-exec-3] c.e.s.d.controllers.AuthController       : User mugisha  is Logging in
+2021-09-29 00:46:32.151  INFO 70190 --- [http-nio-9092-exec-2] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 00:47:20.257  INFO 70190 --- [http-nio-9092-exec-4] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 00:48:00.252  INFO 70190 --- [http-nio-9092-exec-6] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 00:48:25.129  INFO 70190 --- [http-nio-9092-exec-7] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:08:42.642  INFO 70190 --- [http-nio-9092-exec-9] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:08:59.068  INFO 70190 --- [http-nio-9092-exec-10] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:11:54.166  INFO 70190 --- [http-nio-9092-exec-3] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:12:37.749  INFO 70190 --- [http-nio-9092-exec-4] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:12:48.287  INFO 70190 --- [http-nio-9092-exec-5] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:13:49.791  INFO 70190 --- [http-nio-9092-exec-8] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:14:11.735  INFO 70190 --- [http-nio-9092-exec-9] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:14:36.493  INFO 70190 --- [http-nio-9092-exec-10] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:14:40.672  INFO 70190 --- [http-nio-9092-exec-1] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:18:35.442  INFO 70190 --- [http-nio-9092-exec-2] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:18:44.974  INFO 70190 --- [http-nio-9092-exec-4] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:19:01.149  INFO 70190 --- [http-nio-9092-exec-5] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:19:05.068  INFO 70190 --- [http-nio-9092-exec-6] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:19:11.251  INFO 70190 --- [http-nio-9092-exec-8] c.e.s.d.controllers.AuthController       : User mugisha  is Logging in
+2021-09-29 01:19:13.531  INFO 70190 --- [http-nio-9092-exec-9] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:19:25.543  INFO 70190 --- [http-nio-9092-exec-10] c.e.s.d.controllers.AuthController       : User mugisha  is Logging in
+2021-09-29 01:19:27.873  INFO 70190 --- [http-nio-9092-exec-1] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:19:37.696  INFO 70190 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2021-09-29 01:19:37.725  INFO 70190 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2021-09-29 01:19:37.901  INFO 70190 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-29 01:19:37.936  INFO 70190 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-29 01:19:37.973  INFO 70190 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-29 01:19:49.260  INFO 75438 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : Starting DukaChallengeApplication using Java 11.0.2 on Nishimwes-MacBook-Air.local with PID 75438 (/Users/nishimweelysee/Documents/DukaChallenge/target/classes started by nishimweelysee in /Users/nishimweelysee/Documents/DukaChallenge)
+2021-09-29 01:19:49.288  INFO 75438 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : No active profile set, falling back to default profiles: default
+2021-09-29 01:19:49.400  INFO 75438 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-29 01:19:49.402  INFO 75438 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-29 01:19:51.605  INFO 75438 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-29 01:19:51.688  INFO 75438 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2021-09-29 01:19:52.238  INFO 75438 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4148df6b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-29 01:19:52.247  INFO 75438 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-29 01:19:52.505  INFO 75438 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2021-09-29 01:19:52.511  INFO 75438 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-29 01:19:52.512  INFO 75438 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-09-29 01:19:52.637  INFO 75438 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-29 01:19:52.637  INFO 75438 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3232 ms
+2021-09-29 01:19:53.219  INFO 75438 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-29 01:19:53.261  INFO 75438 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-29 01:19:53.302  INFO 75438 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-29 01:19:53.392  INFO 75438 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-29 01:19:53.783  INFO 75438 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-29 01:19:53.803  INFO 75438 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-29 01:19:54.399  INFO 75438 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-29 01:19:54.418  INFO 75438 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-29 01:19:54.908  WARN 75438 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-29 01:19:55.729  INFO 75438 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-09-29 01:19:56.257  INFO 75438 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cd83171, org.springframework.security.web.context.SecurityContextPersistenceFilter@545289fe, org.springframework.security.web.header.HeaderWriterFilter@45795672, org.springframework.web.filter.CorsFilter@49369b8, org.springframework.security.web.authentication.logout.LogoutFilter@213c2917, com.elysee.springapp.dukachallenge.security.jwt.JwtAuthenticationTokenFilter@78859130, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49660238, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c8b23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22aa897b, org.springframework.security.web.session.SessionManagementFilter@2b619854, org.springframework.security.web.access.ExceptionTranslationFilter@7d607c6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d53b692]
+2021-09-29 01:19:56.401  INFO 75438 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-29 01:19:56.835  INFO 75438 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+2021-09-29 01:19:56.849  INFO 75438 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-29 01:19:56.873  INFO 75438 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-29 01:19:56.891  INFO 75438 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-29 01:19:57.262  INFO 75438 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : Started DukaChallengeApplication in 8.651 seconds (JVM running for 10.902)
+2021-09-29 01:19:57.597  INFO 75438 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-29 01:19:57.603  INFO 75438 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-29 01:19:57.605  INFO 75438 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-09-29 01:20:03.420  INFO 75438 --- [http-nio-9092-exec-1] c.e.s.d.controllers.AuthController       : User mugisha  is Logging in
+2021-09-29 01:20:06.274  INFO 75438 --- [http-nio-9092-exec-4] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:20:29.335  INFO 75438 --- [http-nio-9092-exec-2] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:22:26.526  INFO 75438 --- [http-nio-9092-exec-5] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:22:34.949  WARN 75438 --- [http-nio-9092-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-09-29 01:23:10.643  INFO 75438 --- [http-nio-9092-exec-8] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:23:15.100  INFO 75438 --- [http-nio-9092-exec-9] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:23:20.558  INFO 75438 --- [http-nio-9092-exec-10] c.e.s.d.controllers.AuthController       : user TaskOwner(id=d85f6b2c-f77e-4bdd-b002-dd1472524b5b, firstName=mugish, lastName=lio56, email=mugisha@gmail.com, username=mugisha, password=null, isVerified=false) is updating profile 
+2021-09-29 01:23:35.915  INFO 75438 --- [http-nio-9092-exec-1] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:25:20.888  INFO 75438 --- [http-nio-9092-exec-2] c.e.s.d.controllers.AuthController       : user TaskOwner(id=d85f6b2c-f77e-4bdd-b002-dd1472524b5b, firstName=mugish, lastName=lio, email=mugisha@gmail.com, username=mugisha, password=null, isVerified=false) is updating profile 
+2021-09-29 01:26:48.323  INFO 75438 --- [http-nio-9092-exec-5] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:27:04.437  INFO 75438 --- [http-nio-9092-exec-6] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:27:09.928  INFO 75438 --- [http-nio-9092-exec-7] c.e.s.d.controllers.AuthController       : user TaskOwner(id=d85f6b2c-f77e-4bdd-b002-dd1472524b5b, firstName=mugish, lastName=lio33, email=mugisha@gmail.com, username=mugisha, password=null, isVerified=false) is updating profile 
+2021-09-29 01:27:36.936 ERROR 75438 --- [http-nio-9092-exec-8] c.e.s.d.security.jwt.JwtUtils            : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+2021-09-29 01:27:36.985 ERROR 75438 --- [http-nio-9092-exec-8] c.e.s.d.s.j.JwtAuthenticationEntryPoint  : Unauthorized Error: Full authentication is required to access this resource
+2021-09-29 01:27:42.036 ERROR 75438 --- [http-nio-9092-exec-9] c.e.s.d.security.jwt.JwtUtils            : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+2021-09-29 01:27:42.044 ERROR 75438 --- [http-nio-9092-exec-9] c.e.s.d.s.j.JwtAuthenticationEntryPoint  : Unauthorized Error: Full authentication is required to access this resource
+2021-09-29 01:30:37.563 ERROR 75438 --- [http-nio-9092-exec-1] c.e.s.d.security.jwt.JwtUtils            : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+2021-09-29 01:30:37.603 ERROR 75438 --- [http-nio-9092-exec-1] c.e.s.d.s.j.JwtAuthenticationEntryPoint  : Unauthorized Error: Full authentication is required to access this resource
+2021-09-29 01:30:50.002 ERROR 75438 --- [http-nio-9092-exec-4] c.e.s.d.security.jwt.JwtUtils            : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+2021-09-29 01:30:50.025 ERROR 75438 --- [http-nio-9092-exec-4] c.e.s.d.s.j.JwtAuthenticationEntryPoint  : Unauthorized Error: Full authentication is required to access this resource
+2021-09-29 01:31:08.611 ERROR 75438 --- [http-nio-9092-exec-2] c.e.s.d.security.jwt.JwtUtils            : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+2021-09-29 01:31:08.626 ERROR 75438 --- [http-nio-9092-exec-2] c.e.s.d.s.j.JwtAuthenticationEntryPoint  : Unauthorized Error: Full authentication is required to access this resource
+2021-09-29 01:31:16.598  INFO 75438 --- [http-nio-9092-exec-3] c.e.s.d.controllers.AuthController       : User mugisha  is Logging in
+2021-09-29 01:31:18.964  INFO 75438 --- [http-nio-9092-exec-5] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:31:27.749  INFO 75438 --- [http-nio-9092-exec-6] c.e.s.d.controllers.AuthController       : user TaskOwner(id=d85f6b2c-f77e-4bdd-b002-dd1472524b5b, firstName=mugish432, lastName=lio33, email=mugisha@gmail.com, username=mugisha, password=null, isVerified=false) is updating profile 
+2021-09-29 01:31:44.646  WARN 75438 --- [http-nio-9092-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.UUID` from String "undefined": UUID has to be represented by standard 36-char representation; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.UUID` from String "undefined": UUID has to be represented by standard 36-char representation
+ at [Source: (PushbackInputStream); line: 1, column: 7] (through reference chain: com.elysee.springapp.dukachallenge.domain.TaskOwner["id"])]
+2021-09-29 01:41:31.561  WARN 75438 --- [http-nio-9092-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.UUID` from String "undefined": UUID has to be represented by standard 36-char representation; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.UUID` from String "undefined": UUID has to be represented by standard 36-char representation
+ at [Source: (PushbackInputStream); line: 1, column: 7] (through reference chain: com.elysee.springapp.dukachallenge.domain.TaskOwner["id"])]
+2021-09-29 01:41:40.830  INFO 75438 --- [http-nio-9092-exec-9] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 01:41:47.727  WARN 75438 --- [http-nio-9092-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.UUID` from String "undefined": UUID has to be represented by standard 36-char representation; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.UUID` from String "undefined": UUID has to be represented by standard 36-char representation
+ at [Source: (PushbackInputStream); line: 1, column: 7] (through reference chain: com.elysee.springapp.dukachallenge.domain.TaskOwner["id"])]
+2021-09-29 03:50:40.130  WARN 75438 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m45s598ms).
+2021-09-29 05:30:35.557  WARN 75438 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h39m55s430ms).
+2021-09-29 06:46:32.278  WARN 75438 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h15m56s733ms).
+2021-09-29 08:04:49.112  WARN 75438 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h18m16s832ms).
+2021-09-29 08:37:20.849  WARN 75438 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m31s538ms).
+2021-09-29 08:52:44.485  WARN 75438 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m23s538ms).
+2021-09-29 10:51:02.329  WARN 75438 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m47s3ms).
+2021-09-29 12:11:23.013  WARN 75438 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m49s514ms).
+2021-09-29 12:53:49.091  INFO 75438 --- [http-nio-9092-exec-1] c.e.s.d.controllers.AuthController       : User tessi  is Logging in
+2021-09-29 12:53:55.547  INFO 75438 --- [http-nio-9092-exec-2] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 12:56:22.849  INFO 75438 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2021-09-29 12:56:22.890  INFO 75438 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2021-09-29 12:56:23.113  INFO 75438 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-29 12:56:23.143  INFO 75438 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-29 12:56:23.235  INFO 75438 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-29 12:56:31.661  INFO 31991 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : Starting DukaChallengeApplication using Java 11.0.2 on Nishimwes-MacBook-Air.local with PID 31991 (/Users/nishimweelysee/Documents/DukaChallenge/target/classes started by nishimweelysee in /Users/nishimweelysee/Documents/DukaChallenge)
+2021-09-29 12:56:31.666  INFO 31991 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : No active profile set, falling back to default profiles: default
+2021-09-29 12:56:31.747  INFO 31991 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-29 12:56:31.748  INFO 31991 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-29 12:56:33.556  INFO 31991 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-29 12:56:33.624  INFO 31991 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2021-09-29 12:56:34.121  INFO 31991 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6677ce2a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-29 12:56:34.130  INFO 31991 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-29 12:56:34.368  INFO 31991 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2021-09-29 12:56:34.374  INFO 31991 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-29 12:56:34.374  INFO 31991 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-09-29 12:56:34.464  INFO 31991 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-29 12:56:34.464  INFO 31991 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2716 ms
+2021-09-29 12:56:34.729  INFO 31991 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-29 12:56:34.756  INFO 31991 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-29 12:56:34.775  INFO 31991 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-29 12:56:34.823  INFO 31991 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-29 12:56:34.977  INFO 31991 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-29 12:56:34.986  INFO 31991 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-29 12:56:35.582  INFO 31991 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-29 12:56:35.592  INFO 31991 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-29 12:56:35.962  WARN 31991 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-29 12:56:36.529  INFO 31991 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-09-29 12:56:36.993  INFO 31991 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6aa33c5d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f969987, org.springframework.security.web.header.HeaderWriterFilter@7ba4b6a3, org.springframework.web.filter.CorsFilter@1acd0d2e, org.springframework.security.web.authentication.logout.LogoutFilter@745b640b, com.elysee.springapp.dukachallenge.security.jwt.JwtAuthenticationTokenFilter@5c4dc469, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@667f821e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6da8b43b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56a1711c, org.springframework.security.web.session.SessionManagementFilter@3dbde447, org.springframework.security.web.access.ExceptionTranslationFilter@60d3d93b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b7b89f9]
+2021-09-29 12:56:37.114  INFO 31991 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-29 12:56:37.340  INFO 31991 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+2021-09-29 12:56:37.341  INFO 31991 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-29 12:56:37.348  INFO 31991 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-29 12:56:37.354  INFO 31991 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-29 12:56:37.634  INFO 31991 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : Started DukaChallengeApplication in 6.618 seconds (JVM running for 8.662)
+2021-09-29 12:56:38.281  INFO 31991 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-29 12:56:38.283  INFO 31991 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-29 12:56:38.286  INFO 31991 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-09-29 12:56:52.299  INFO 31991 --- [http-nio-9092-exec-3] c.e.s.d.controllers.AuthController       : user TaskOwner(id=d4a7080f-6e5e-4c8a-8cf5-eb094a4f249c, firstName=karenzi123, lastName=umutesi, email=karenzi1112@gmail.com, username=tessi, password=null, isVerified=false) is updating profile 
+2021-09-29 12:57:51.875  INFO 31991 --- [http-nio-9092-exec-5] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 12:58:01.609  WARN 31991 --- [http-nio-9092-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.UUID` from String "undefined": UUID has to be represented by standard 36-char representation; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.UUID` from String "undefined": UUID has to be represented by standard 36-char representation
+ at [Source: (PushbackInputStream); line: 1, column: 7] (through reference chain: com.elysee.springapp.dukachallenge.domain.TaskOwner["id"])]
+2021-09-29 12:58:08.625  WARN 31991 --- [http-nio-9092-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.UUID` from String "undefined": UUID has to be represented by standard 36-char representation; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.UUID` from String "undefined": UUID has to be represented by standard 36-char representation
+ at [Source: (PushbackInputStream); line: 1, column: 7] (through reference chain: com.elysee.springapp.dukachallenge.domain.TaskOwner["id"])]
+2021-09-29 13:00:00.591  INFO 31991 --- [http-nio-9092-exec-6] c.e.s.d.controllers.AuthController       : User tessi  is Logging in
+2021-09-29 13:00:02.400  INFO 31991 --- [http-nio-9092-exec-7] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 13:02:15.712  INFO 31991 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2021-09-29 13:02:15.752  INFO 31991 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2021-09-29 13:02:15.863  INFO 31991 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-29 13:02:15.873  INFO 31991 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-29 13:02:15.926  INFO 31991 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-29 13:02:23.917  INFO 32884 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : Starting DukaChallengeApplication using Java 11.0.2 on Nishimwes-MacBook-Air.local with PID 32884 (/Users/nishimweelysee/Documents/DukaChallenge/target/classes started by nishimweelysee in /Users/nishimweelysee/Documents/DukaChallenge)
+2021-09-29 13:02:23.925  INFO 32884 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : No active profile set, falling back to default profiles: default
+2021-09-29 13:02:24.079  INFO 32884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-29 13:02:24.084  INFO 32884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-29 13:02:26.976  INFO 32884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-29 13:02:27.092  INFO 32884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2021-09-29 13:02:27.676  INFO 32884 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5958b07a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-29 13:02:27.687  INFO 32884 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-29 13:02:28.093  INFO 32884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2021-09-29 13:02:28.107  INFO 32884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-29 13:02:28.109  INFO 32884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-09-29 13:02:28.255  INFO 32884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-29 13:02:28.256  INFO 32884 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4170 ms
+2021-09-29 13:02:28.668  INFO 32884 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-29 13:02:28.705  INFO 32884 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-29 13:02:28.732  INFO 32884 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-29 13:02:28.795  INFO 32884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-29 13:02:28.994  INFO 32884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-29 13:02:29.004  INFO 32884 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-29 13:02:29.646  INFO 32884 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-29 13:02:29.656  INFO 32884 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-29 13:02:30.018  WARN 32884 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-29 13:02:30.584  INFO 32884 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-09-29 13:02:31.012  INFO 32884 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e85a44d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6178c118, org.springframework.security.web.header.HeaderWriterFilter@27594b87, org.springframework.web.filter.CorsFilter@1313ef6e, org.springframework.security.web.authentication.logout.LogoutFilter@207ec474, com.elysee.springapp.dukachallenge.security.jwt.JwtAuthenticationTokenFilter@539ee4d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dcd7913, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32976a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12e72715, org.springframework.security.web.session.SessionManagementFilter@6bc62a94, org.springframework.security.web.access.ExceptionTranslationFilter@5dde4c90, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67a22bf1]
+2021-09-29 13:02:31.110  INFO 32884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-29 13:02:31.327  INFO 32884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+2021-09-29 13:02:31.328  INFO 32884 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-29 13:02:31.334  INFO 32884 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-29 13:02:31.339  INFO 32884 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-29 13:02:31.739  INFO 32884 --- [restartedMain] c.e.s.d.DukaChallengeApplication         : Started DukaChallengeApplication in 8.547 seconds (JVM running for 10.461)
+2021-09-29 13:02:31.912  INFO 32884 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-29 13:02:31.912  INFO 32884 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-29 13:02:31.915  INFO 32884 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-09-29 13:03:04.856  INFO 32884 --- [http-nio-9092-exec-1] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 13:03:22.078  INFO 32884 --- [http-nio-9092-exec-4] c.e.s.d.controllers.AuthController       : User tessi  is Logging in
+2021-09-29 13:03:23.938  INFO 32884 --- [http-nio-9092-exec-2] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 13:03:37.037  INFO 32884 --- [http-nio-9092-exec-3] c.e.s.d.controllers.AuthController       : user TaskOwner(id=d4a7080f-6e5e-4c8a-8cf5-eb094a4f249c, firstName=karenzi123578, lastName=umutesi, email=karenzi1112@gmail.com, username=tessi, password=null, isVerified=false) is updating profile 
+2021-09-29 13:03:44.233  INFO 32884 --- [http-nio-9092-exec-5] c.e.s.d.controllers.AuthController       : user TaskOwner(id=d4a7080f-6e5e-4c8a-8cf5-eb094a4f249c, firstName=karenzi123578, lastName=umutesi121, email=karenzi1112@gmail.com, username=tessi, password=null, isVerified=false) is updating profile 
+2021-09-29 13:03:50.713  INFO 32884 --- [http-nio-9092-exec-6] c.e.s.d.controllers.AuthController       : user TaskOwner(id=d4a7080f-6e5e-4c8a-8cf5-eb094a4f249c, firstName=karenzi123578, lastName=umutesi121, email=karenzi1112@gmail.com, username=tesssi, password=null, isVerified=false) is updating profile 
+2021-09-29 13:03:56.115  INFO 32884 --- [http-nio-9092-exec-7] c.e.s.d.controllers.AuthController       : User tessi  is Logging in
+2021-09-29 13:03:56.285 ERROR 32884 --- [http-nio-9092-exec-7] c.e.s.d.s.j.JwtAuthenticationEntryPoint  : Unauthorized Error: Bad credentials
+2021-09-29 13:04:01.555  INFO 32884 --- [http-nio-9092-exec-8] c.e.s.d.controllers.AuthController       : User tesssi  is Logging in
+2021-09-29 13:04:03.180  INFO 32884 --- [http-nio-9092-exec-9] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 13:05:26.101  INFO 32884 --- [http-nio-9092-exec-1] c.e.s.d.controllers.TaskController       : Retrieving all Todos
+2021-09-29 13:08:22.499  INFO 32884 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2021-09-29 13:08:22.522  INFO 32884 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2021-09-29 13:08:22.672  INFO 32884 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-29 13:08:22.685  INFO 32884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-29 13:08:22.840  INFO 32884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
